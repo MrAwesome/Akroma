@@ -131,6 +131,6 @@ dmypy.json
 #########################3
 # Akroma specifics
 #########################3
-
-tda_login.py
+secrets.py
 tickers.txt
+tda_token.json

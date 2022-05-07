@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#########################3
+# Akroma specifics
+#########################3
+
+tda_login.py
+tickers.txt

@@ -37,7 +37,7 @@ c = tda_login()
         #)
 r = c.get_quotes(tokens)
 assert r.status_code == 200, r.raise_for_status()
-print(r.json())
+print(r.text)
 
 #lawl = open('/tmp/lawl.json', 'w')
 #muh_datemap = chain['putExpDateMap']

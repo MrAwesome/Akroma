@@ -6,7 +6,8 @@ from lib import tda_login, TOK_PATH
 error = None
 try:
     c = tda_login()
-    has_token = c.ensure_updated_refresh_token()
+    c.ensure_updated_refresh_token()
+    has_token = True
 except Exception as e:
     has_token = False
     error = e

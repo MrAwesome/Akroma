@@ -36,13 +36,14 @@ for ticker in tokens:
         continue
     respjson = r.json()
     fullchains[ticker] = respjson
-    onlydateswelike = {x: y for (x, y) in respjson['putExpDateMap'].items() if (x.startswith('2022-05') or x.startswith('2022-06'))}
+#    onlydateswelike = {x: y for (x, y) in respjson['putExpDateMap'].items() if (x.startswith('2022-05') or x.startswith('2022-06'))}
 
-    for date, striketoinfo in onlydateswelike.items():
+    for date, striketoinfo in respjson['putExpDateMap'].items():
         for strikeprice, info in striketoinfo.items():
             for x in info:
-                if x['inTheMoney'] is False:
-                    objs.append(x)
+                objs.append(x)
+#                if x['inTheMoney'] is False:
+#                    objs.append(x)
 
     #time.sleep(0.1)
 

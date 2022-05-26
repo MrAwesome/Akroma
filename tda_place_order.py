@@ -19,7 +19,7 @@ action = sys.argv[1].lower()
 allowed_equities = {
         # No forex on TDA for now
         #"ZAR/JPY", "HKD/JPY",
-        "HIVE"}
+        "RIOT", "CAN", "TQQQ"}
 
 if target_ticker not in allowed_equities:
     print(f'{{"error": "{target_ticker} is not an allowed equity! Allowed equities: {allowed_equities}"}}')
